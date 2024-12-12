@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>ToDo v2.0 con Typescript</title>
+  </head>
+  <body>
+    <div class="absolute w-full bg-mobile md:bg-desktop bg-cover h-60 -z-10"></div>
+
+
+    <div class="w-4/5 max-w-xl pt-10 mx-auto">
+  
+      <h1 class="text-3xl font-bold tracking-[10px] text-white mb-6">TODO</h1>
+
+
+      <!-- <form> -->        
+      <input class="input-task w-full px-4 py-2 rounded mb-4 shadow-md outline-none  focus:outline-purple-500 " type="text" >
+      <!-- </form> -->
+      
+      
+      <section class="toDo-list shadow-md max-h-64 overflow-y-auto">
+        <article class="bg-white w-full px-4 py-2  text-slate-600 flex items-center rounded-t">
+          <button class="relative top-1 mr-2 hover:transform hover:scale-125 transition-transform">
+            <span class="material-symbols-outlined text-purple-400">check_circle</span>
+          </button>
+          <span class="text-sm mr-auto line-through text-slate-400">Pasear a las perras</span>
+          <span class="material-symbols-outlined cursor-pointer hover:transform hover:scale-125 transition-transform">close</span>
+        </article>
+        
+        <!-- <article class="bg-white w-full px-4 py-2  text-slate-600 flex items-center">
+          <button class="relative top-1 mr-2 hover:transform hover:scale-125 transition-transform">
+            <span class="material-symbols-outlined">radio_button_unchecked</span>
+          </button>
+          <span class="mr-auto text-sm">Estudiar JavaScript</span>
+          <span class="material-symbols-outlined cursor-pointer  hover:transform hover:scale-125 transition-transform">close</span>
+        </article> -->
+
+        <!-- <article class="bg-white w-full px-4 py-2  text-slate-600 flex items-center rounded-b">
+          <button class="relative top-1 mr-2 hover:transform hover:scale-125 transition-transform">
+            <span class="material-symbols-outlined">radio_button_unchecked</span>
+          </button>
+          <span class="mr-auto text-sm">Comprar el pan</span>
+          <span class="material-symbols-outlined cursor-pointer  hover:transform hover:scale-125 transition-transform">close</span>
+        </article> -->
+      </section>
+
+      <section class="bg-white shadow-lg border rounded px-4 py-2 flex justify-between items-center text-slate-500 ">
+        <span class="text-xs text-slate-400"><span class="items-left">5</span> items left</span>
+        <button class="clear-completed hover:text-purple-600">Clear Completed</button>
+      </section>
+
+      <!-- Filters -->
+
+      <section class="bg-white shadow-lg border mt-4 rounded px-4 py-2 flex justify-center gap-4 text-slate-500 ">
+        <button class="filter-all hover:text-purple-600">All</button>
+        <button class="filter-active hover:text-purple-600">Active</button>
+        <button class="filter-completed hover:text-purple-600">Completed</button>
+      </section>
+
+    </div>
+
+
+
+
+    <!-- <script type="module" src="./src/main.js"></script> -->
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
